@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --space-divider: 40px;
+    --sectionHeaderSize: 40px;
+}
+#heading{
+    position: relative;
+    width: 100%;
+	height: 80vh;
+    background: url(../images/geeks-2894621_1920.jpg);
+    /* background-size: cover; */
+	/* background-attachment: fixed; */
+}
+#heading::after{
+	position: absolute;
+    content: '';
+	width: 100%;
+	height: 143px;
+	left: 0;
+	bottom: 0;
+	background: url(../images/wave.png);
+	/* animation: animate 10s linear infinite; */
+}
+#heading header{
+    color: whitesmoke;
+    padding: 100px 0px;
+    text-align: center;
+}
+#heading header #heading-auto-text{
+    margin-top: var(--sectionHeaderSize);
+    color: #ffd209;
+    font-weight: bold;
+    font-size: larger;
+}
+#heading #heading-social-icons{
+    margin-top: var(--sectionHeaderSize);
+}
+#heading #heading-social-icons ul{
+    justify-content: center;
+}
+#heading #heading-social-icons ul img{
+    width: 50px;
+}
+#header header h1{
+    font-size: 500px;
+}
+
+#main{
+    padding-top: 60px;
+}
+#main .row .col-7,.col-5{
+    /* border: 2px solid red; */
+}
+#main main .my-image{
+    height: 50vh;
+    width: auto;
+    margin: 0px auto;
+    /* transform: scale(107%); */
+}
+#main .experiences .experience:not(last-child){
+    margin-bottom: 30px;
+    padding: 0px 20px ;
+}
+#main .experiences .experience .experience-lang{
+    text-align: center;
+}
+#main #myWork{
+    margin: var(--space-divider) 0px;
+}
+#main #myWork header{
+    text-align: center;
+    font-size: var(--sectionHeaderSize);
+}
+#main #myWork .myWork-portfolio .img-container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+#main #myWork .myWork-portfolio .img-container img{
+   display: block;
+    width: 23vw;
+    margin: 3px;
+    cursor: pointer;
+    opacity: .8;
+    transition: transform .3s ease-in-out;
+}
+#main #myWork .myWork-portfolio .img-container img:hover{
+    transform: scale(90%);
+    opacity: 1;
+}
+
+#main #testimon{
+    margin: var(--space-divider) ;
+}
+#main #testimon header{
+    text-align: center;
+    font-size: var(--sectionHeaderSize);
+}
+#main .carousel .carousel-inner .carousel-item .carousel-caption{
+    bottom: 100px;
+    color: black;
+    font-size: 40px;
+}
+#main .carousel .carousel-inner .carousel-item{
+    height: 70vh;
+}
+#main .carousel .carousel-inner .carousel-item .bg-img{
+    width: inherit;
+    height: inherit;
+    opacity: .5;
+}
+#main .carousel .carousel-inner .carousel-item .user-img{
+    width: 200px;
+}
+
+#main #contacts header{
+    text-align: center;
+    font-size: var(--sectionHeaderSize);
+}
+#main #contacts #form-container textarea{
+    resize: none;
+}
+#main #contacts ::placeholder{
+    color: brown;
+    font-size: larger;
+    font-weight: bold;
+}
+#main #contacts #alt-contacts{
+display: flex;
+justify-content: space-evenly;
+}
+#main #contacts #alt-contacts .alt-contact-text{
+    width: auto;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    /* border: 2px solid red; */
+    margin: 10px 0px 0px 0px;
+}
+
+
+footer .footer-social-icon{
+    width: 20px;
+    fill: green;
+}
